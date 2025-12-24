@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Moi</title>
+ <style>
+    * {
+  margin: 0;
+  padding: 0; 
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head {
+  background-color: #111;
+  padding: 30px;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+.head h1 {
+  margin-bottom: 15px;
+  color: #00ffcc;
+}
+.head h2 {
+  margin-bottom: 10px;
+}
+.head ul {
+  list-style: none;
+}
+.head ul li {
+  background-color: #222;
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 5px;
+}
+.btn {
+  top: 20px;
+  left: 20px;
+  background-color: #00ffcc;
+  color: #000;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: #00cca3;
+}
+</style>
+<body>
+
+  <div class="head">
+    <h1 id="name">Amina El Yousfi</h1>
+    <h2>Skills</h2>
+    <ul id="skills">
+      <li>HTML,CSS,JS</li>
+      <li>Github,GitLap</li>
+      <li>My SQL</li>
+      <li>Excel,Word,powerPoint</li>
+      <li>Communication</li>
+      <li>travail en équipe</li>
+      <li>Resbonsabilité</li>
+      <li>Gestion de tempe</li>
+      <li>Soft Skills </li>
+    </ul>
+    <button class="btn" onclick="goHome()">Home</button>
+  </div>
+  <script>
+ const homeBtn = document.querySelector("button");
+homeBtn.addEventListener("click", () => {
+    window.location.href = "accueil.html";
+  });
+</script>
+</body>
+</html>
