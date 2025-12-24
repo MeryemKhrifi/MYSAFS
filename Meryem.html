@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    * {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prf {
+  background-color: #111;
+  padding: 30px;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.prf h1 {
+  margin-bottom: 15px;
+  color: #00ffcc;
+}
+
+.prf h2 {
+  margin-bottom: 10px;
+}
+
+.prf ul {
+  list-style: none;
+}
+
+.prf ul li {
+  background-color: #222;
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 5px;
+}
+button {
+  
+  top: 20px;
+  left: 20px;
+  background-color: #00ffcc;
+  color: #000;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #00cca3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="prf">
+    <h1>KHRIFI MERYEM</h1>
+    <h2>My Skills</h2>
+    <ul>
+        <li>MySQL</li>
+        <li>Python</li>
+        <li>Javascript</li>
+        <li>PHP</li>
+        <li>CSS</li>
+    </ul>
+    <button>Home</button>
+</div>
+<script>
+ 
+  const homeBtn = document.querySelector("button");
+
+ 
+  homeBtn.addEventListener("click", () => {
+    window.location.href = "accueil.html";
+  });
+</script>
+
+
+</body>
+</html>
+    
